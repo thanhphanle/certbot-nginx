@@ -2,10 +2,15 @@
 Contain certbot utility scripts.
 
 # Install
-Install certbot and python in CentOS 7
+Install certbot and python in CentOS 7:
 
 ```
 $ yum install certbot python2-certbot-apache mod_ssl
+```
+
+And check installed version of certbot:
+```
+$ certbot --version
 ```
 
 # Certbot CLI
@@ -16,7 +21,7 @@ $ yum install certbot python2-certbot-apache mod_ssl
 $ certbot certificates
 ```
 
-### Install new certificate 
+### Obtain and install new certificate for specific domain name
 
 Install a specific certificate for Nginx:
 ```
